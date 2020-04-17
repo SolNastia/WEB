@@ -1,0 +1,61 @@
+body{
+	margin: 0;
+	background-color:#112;
+	color:white;
+}
+
+a{
+    color: white; /* Цвет ссылок */
+}
+
+a:visited {
+    color: #cecece; /* Цвет посещенных ссылок */
+}
+
+a:active {
+    color: #ffff00; /* Цвет активных ссылок */
+}
+
+.photo
+{
+	border-radius: 150px; 
+	text-align: center;
+
+}
+
+.VideoAudio
+{
+position: absolute;
+right:30px;
+top:30px;
+bottom:0; 
+}
+
+.ftr
+{
+	padding: 10px; /* Поля вокруг текста */
+	background: white; /* Цвет фона */
+	color: black; /* Цвет текста */
+	width: 100%; /* Ширина слоя */
+	text-align: center;
+}
+.hr li{
+	
+	display:inline;
+}
+
+.hr{
+	margin: 0; /* Обнуляем значение отступов */
+    padding: 10px; /* Значение полей */
+}
+
+table {
+  margin: auto;
+  margin-top: 10px;
+  border-spacing: 5px;
+}
+
+table, th, td {
+  border: 4px double white;
+  border-collapse: collapse;
+}
