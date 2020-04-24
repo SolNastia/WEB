@@ -1,0 +1,21 @@
+#rectangle {
+  width: 200px;
+  height: 200px;
+  animation-duration: 1.75s;
+  animation-name: changecolor;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changecolor {
+  0% {background-color: #CED8F6;}
+  16% {background-color: #167;}
+  50% {background-color: #81BEF7;}
+  84% {background-color: #81F7F3;}
+  100% {background-color: #D358F7;}
+}
+.t4 {
+    position: absolute;
+    right:30px;
+    top:30px;
+    bottom:0; 
+}

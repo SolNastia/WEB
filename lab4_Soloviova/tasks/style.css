@@ -1,0 +1,23 @@
+body{
+	margin: 0;
+	background-color:#112;
+	color:white;
+}
+
+a{
+    color: white; /* Цвет ссылок */
+}
+
+a:visited {
+    color: #cecece; /* Цвет посещенных ссылок */
+}
+
+a:active {
+    color: #ffff00; /* Цвет активных ссылок */
+}
+.t {
+    position: absolute;
+    right:30px;
+    top:30px;
+    bottom:0; 
+}
