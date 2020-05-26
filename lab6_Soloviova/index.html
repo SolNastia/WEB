@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> Super gallery
+        <br>by Anasteysh</h1>
+    <div class="gal">
+        <my-gallery preloader="resources/preloader.gif" imageList="
+        resources/1.jpg; resources/2.jpg; resources/3.jpg;
+        resources/4.jpg; resources/5.jpg; resources/6.jpg">
+        </my-gallery>
+    </div>
+    <footer> <small>&copy; Copyright <span id="year"></span>, KPI licence</small></footer>
+    <script src="script.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+
+    <script>
+        // footer year
+        $('#year').text(new Date().getFullYear());
+    </script>
+</body>
+
+</html>

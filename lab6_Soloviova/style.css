@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.gal {
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+
+}
+
+img {
+    object-fit: contain;
+    border: gray 1px solid;
+    width: 50%;
+    -webkit-transition: 1s;
+    transition: 1s;
+    opacity: .5;
+    outline: 200px solid rgba(255, 200, 200, .5);
+    outline-offset: -200px;
+}
+
+img:hover {
+    opacity: 1;
+    outline: 10px solid rgba(255, 100, 200, .5);
+    outline-offset: -10px;
+    box-shadow: 0 0 0 0 red inset;
+}
+
+.gallery-container {
+    display: grid;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 550px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+
+
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h1 {
+        display: block;
+    }
+
+    footer {
+        display: block;
+    }
+}
+
+
+
+
+.image-container {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.image-container img {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.preloader,
+.placeholder {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgb(99, 91, 91);
+    font-size: 20px;
+}
+
+@media(max-width:540px) {
+    .image-container {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media(max-width:420px) {
+    .image-container {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
